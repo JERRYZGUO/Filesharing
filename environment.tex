@@ -1,0 +1,123 @@
+\usepackage{extract}
+\usepackage{fancyhdr}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[hmargin=2cm,vmargin=2.5cm]{geometry}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{epsfig}
+\usepackage{framed}
+\usepackage{textcomp}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+\usepackage[usenames,dvipsnames]{pstricks}
+\usepackage[english]{babel}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage[bottom]{footmisc}
+
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{pgfplots}
+\usepackage{hyperref}
+\usepackage{commath}
+\usepackage{mathtools}
+\usepackage{physics}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{braket}
+\usepackage{import}
+
+\usepackage{tikz} 
+\usetikzlibrary{quantikz}
+\usetikzlibrary{arrows,shadows} % for pgf-umlsd
+\usepackage[underline=true,rounded corners=false]{pgf-umlsd}
+%%%%%%%%%%% NEW COMMANDS %%%%%%%%%%%%%%
+
+%%%%%%%%%%%% ASTRONOMY %%%%%%%%%%%%%%%%
+\newcommand{\Msun}{M_\odot}
+\newcommand{\Lsun}{L_\odot}
+\newcommand{\Rsun}{R_\odot}
+\newcommand{\Mearth}{M_\oplus}
+\newcommand{\Learth}{L_\oplus}
+\newcommand{\Rearth}{R_\oplus}
+%%%%%%%%%%% MATHEMATICS %%%%%%%%%%%%%%%
+% \newcommand{\grad}{\nabla}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\eqnarr}{\begin{eqnarray}}
+\newcommand{\eqnend}{\end{eqnarray}}
+\newcommand{\deriv}[2]{\frac{d #1}{d #2}}
+\usepackage{mathtools}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+% \newcommand{\norm}[1]{\left\Vert #1\right\Vert}
+
+% \newcommand{\bigO}{\mathcal{O}}
+\DeclareMathSymbol{\umu}{\mathalpha}{operators}{0}
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+%%%%%%%%%%% STRUCTURE %%%%%%%%%%%%%%%
+% https://www.overleaf.com/learn/latex/Theorems_and_proofs
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark}
+\newtheorem*{exercise}{Exercise}
+\theoremstyle{remark}
+\newtheorem*{example}{\textbf{Example}}
+\let\oldproof\proof
+\renewcommand{\proof}{\color{blue}\oldproof}
+\newtheorem*{derivation}{Derivation}
+\newtheorem{definition}{Definition}
+\newtheorem*{qt}{Quote}
+%%%%%%%%%%% PHYSICS %%%%%%%%%%%%%%%
+\newcommand{\bigO}[1]{\mathcal{O}\left(#1\right)}
+%%%%%%%%%%% PHYSICS %%%%%%%%%%%%%%%
+\newcommand{\up}{\uparrow}
+\newcommand{\dn}{\downarrow}
+\newcommand{\Lagr}{\mathcal{L}}  % Lagrangian
+\newcommand{\st}[1]{\ket{#1}}
+\newcommand{\supket}[1]{\vert #1 \rangle\rangle}
+\newcommand{\supbra}[1]{\langle \langle #1 \vert}
+\newcommand{\product}[2]{\langle #1 \vert #2 \rangle}
+\newcommand{\sandwich}[3]{\bra{#1}#2 \ket{#3}}
+\newcommand{\iprod}[2]{\langle #1\vert #2 \rangle}
+\newcommand{\linb}[2]{\mathcal{D}\left[#1\right]\left(#2\right)}
+\newcommand{\linbladian}[1]{\mathcal{D}\left[#1\right]}
+\newcommand{\LL}{\mathcal{L}}
+\newcommand{\dm}[1]{\ket{#1}\bra{#1}}
+\newcommand{\E}[1]{\left<#1\right>}
+\newcommand{\EE}{\mathcal{E}}
+\newcommand{\RR}{\mathcal{R}}
+\newcommand{\cond}{\text{s.t.  }}
+\newcommand{\dom}{\text{dom }}
+% \newcommand{\tr}[1]{\left<#1\right>}
+%%%%%%%%%%% NOTES - TAKING %%%%%%%%%%%%%%%
+\newcommand{\lecture}[1]{
+\line(1,0){0.4\columnwidth}  \textbf{\textcolor{blue}{lecture #1}} \line(1,0){0.4\columnwidth}}
+\newcommand{\tbf}{\textcolor{red}{TO BE FILLED}}
+\newcommand{\sbkt}[1]{\left(#1\right)}
+\newcommand{\mbkt}[1]{\left[#1\right]}
+\newcommand{\lbkt}[1]{\left\{#1\right\}}
+\newcommand{\paper}[3]{#1
+    \begin{itemize}
+        \item #2; \textit{#3}
+    \end{itemize}
+}
+\newcommand{\rtxt}[1]{\textcolor{red}{#1}}
+\newcommand{\then}{\Rightarrow}
+\newcommand{\tbd}[1]{\textcolor{red}{#1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
